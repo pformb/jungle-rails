@@ -20,7 +20,7 @@ main section.categories-show {
     }
     article {
       .soldout {
-        min-width: 110px;
+        width: 110px;
         background: rgba(224, 14, 14, 0.8);
         border: 1px solid rgba(224, 14, 14, 0.8);
         border-radius: 0.25em;
@@ -79,6 +79,7 @@ main section.categories-show {
       }
       div {
         display: flex;
+        align-items: center;
         justify-content: space-between;
         padding: 0.5em;
         form {
