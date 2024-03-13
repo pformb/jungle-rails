@@ -16,6 +16,9 @@ Rails.application.routes.draw do
     root to: 'dashboard#show'
     resources :products, except: [:edit, :update, :show, :index]
   end
+
+  get '/about', to: 'pages#about'
+
 end
 
   # The priority is based upon order of creation: first created -> highest priority.
