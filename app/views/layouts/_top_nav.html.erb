@@ -48,6 +48,14 @@
           <%= link_to "About", about_path, class: "nav-link" %>
         </li>
 
+    
+        <% if current_user %>
+        Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout' %>
+      <% else %>
+        <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
+      <% end %>
+  
+
       </ul>
 
       <ul class="navbar-nav">
